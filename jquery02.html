@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.3.min.js"></script>
+
+</head>
+<body>
+
+    <input type="text" class="test1" id="xx">
+    <img src="#" class="test2">
+    <img src="#" class="test3" width="" height="">
+
+    <script>
+        //var x = document.querySelector(".test1").id;
+        var x = $(".test1").attr("id"); //id속성을 얻음
+        console.log(x);
+
+        //src 값을 변경
+        $(".test2").attr("src", "값을변경");
+
+        //여러속성을 한번에 변경 (객체 전달)
+        $(".test3").attr({
+            src: "값을 변경",
+            width: "200",
+            height: "200"
+
+    })
+
+    </script>
+
+    
+</body>
+</html>

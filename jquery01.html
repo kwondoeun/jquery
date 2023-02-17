@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.3.min.js"></script>
+
+</head>
+<body>
+
+    <input type="text" id="melon" value="홍길동">
+    <input type="text" class="apple">
+
+    <script>
+        //$("선택자로") 요소를 얻으면, 제이쿼리 시작객체를 반환해줍니다.
+        //$("선택자").제이쿼리함수()를 이용해서 태그를 제어합니다.
+
+        //console.log($("#melon")[0] ); //순수한 엘리먼트
+
+        //var result = document.getElementById("melon").value;
+
+        //값을 얻음
+        var result = $("#melon").val();
+        console.log(result);
+
+        //값을 변경
+        $("#melon").val("변경할값");
+
+        //값을 변경
+        $(".apple").val("변경할값");
+
+        
+        
+
+    </script>
+    
+    
+
+</body>
+</html>
